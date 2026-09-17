@@ -1,0 +1,10 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Large files hosted on OSF — see README before adding them here
+models/GlotLID-10M_desc/model.safetensors
+data/glotlid-corpus/
+data/flores200/
+data/MCS-350/MCS-350_without-k.tsv
+resources/WorldsLangs.tsv
