@@ -30,7 +30,7 @@ identification over a candidate inventory of more than 1,800 languages.
 
 | Resource | Link |
 |---|---|
-| 📄 Paper | Rocco Tripodi, *Representation Learning Enables Language Identification in Zero- and Few-Shot Settings*, Transactions of the Association for Computational Linguistics, 2026 (to appear) |
+| 📄 Paper | Rocco Tripodi, *[Representation Learning Enables Language Identification in Zero- and Few-Shot Settings](https://direct.mit.edu/tacl/article/doi/10.1162/TACL.a.815/139346/Representation-Learning-Enables-Language)*, Transactions of the Association for Computational Linguistics, 2026 |
 | 🤗 Model | <https://huggingface.co/cafoscari-nlp/LIBE> |
 | 🤗 Demo | <https://huggingface.co/spaces/roccot/LIBE> |
 | 🗄️ Large files & weights | [OSF project](https://osf.io/2zhct/) |
@@ -167,12 +167,19 @@ distribution.
 If you use LIBE in your work, please cite:
 
 ```bibtex
-@article{tripodi-2026-libe,
-  author  = {Tripodi, Rocco},
-  title   = {Representation Learning Enables Language Identification in Zero- and Few-Shot Settings},
-  journal = {Transactions of the Association for Computational Linguistics},
-  year    = {2026},
-  note    = {To appear}
+@article{10.1162/TACL.a.815,
+    author = {Tripodi, Rocco},
+    title = {Representation Learning Enables Language Identification in Zero- and Few-Shot Settings},
+    journal = {Transactions of the Association for Computational Linguistics},
+    volume = {14},
+    pages = {2555-2573},
+    year = {2026},
+    month = {10},
+    abstract = {Language Identification (LID) is a key component of multilingual NLP pipelines and multilingual corpus construction. LID errors can create spurious text–language associations, harming downstream model quality, especially for low-resource languages and fine-grained taxonomies involving closely related languages and dialects. We propose LIBE, a representation-based approach that embeds input texts and natural-language descriptions into a shared semantic space with a bi-encoder, enabling LID via similarity search. This formulation supports data-efficient learning and the addition of new languages through their descriptions. To improve discrimination in ambiguous or low-resource cases, we also introduce an optional cross-encoder re-ranking stage. Across multiple benchmarks, LIBE achieves competitive performance with strong LID systems when initialized from pretrained multilingual encoders, while requiring substantially less task-specific LID supervision in several adaptation settings. The hybrid bi-encoder– cross-encoder formulation further improves robustness in challenging open-set scenarios, achieving up to 90\% F1 with as few as five labeled examples. Code and data are available at https://github.com/cafoscari-nlp/LIBE.},
+    issn = {2307-387X},
+    doi = {10.1162/TACL.a.815},
+    url = {https://doi.org/10.1162/TACL.a.815},
+    eprint = {https://direct.mit.edu/tacl/article-pdf/doi/10.1162/TACL.a.815/2632246/tacl.a.815.pdf},
 }
 ```
 
